@@ -3,21 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2853BAB625CF0830004C69AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2853BAB525CF0830004C69AA /* AppDelegate.swift */; };
-		2853BAB825CF0830004C69AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2853BAB725CF0830004C69AA /* ContentView.swift */; };
 		2853BABA25CF0831004C69AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2853BAB925CF0831004C69AA /* Assets.xcassets */; };
 		2853BABD25CF0831004C69AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2853BABC25CF0831004C69AA /* Preview Assets.xcassets */; };
 		2853BAC025CF0831004C69AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2853BABE25CF0831004C69AA /* Main.storyboard */; };
+		2853BACC25CF0DAD004C69AA /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 2853BACB25CF0DAD004C69AA /* HotKey */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2853BAB225CF0830004C69AA /* Trigger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trigger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2853BAB525CF0830004C69AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2853BAB725CF0830004C69AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2853BAB925CF0831004C69AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2853BABC25CF0831004C69AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2853BABF25CF0831004C69AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2853BACC25CF0DAD004C69AA /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				2853BAB525CF0830004C69AA /* AppDelegate.swift */,
-				2853BAB725CF0830004C69AA /* ContentView.swift */,
 				2853BAB925CF0831004C69AA /* Assets.xcassets */,
 				2853BABE25CF0831004C69AA /* Main.storyboard */,
 				2853BAC125CF0831004C69AA /* Info.plist */,
@@ -90,6 +89,9 @@
 			dependencies = (
 			);
 			name = Trigger;
+			packageProductDependencies = (
+				2853BACB25CF0DAD004C69AA /* HotKey */,
+			);
 			productName = Trigger;
 			productReference = 2853BAB225CF0830004C69AA /* Trigger.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 2853BAA925CF0830004C69AA;
+			packageReferences = (
+				2853BACA25CF0DAD004C69AA /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			productRefGroup = 2853BAB325CF0830004C69AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2853BAB825CF0830004C69AA /* ContentView.swift in Sources */,
 				2853BAB625CF0830004C69AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2853BACA25CF0DAD004C69AA /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2853BACB25CF0DAD004C69AA /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2853BACA25CF0DAD004C69AA /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2853BAAA25CF0830004C69AA /* Project object */;
 }
