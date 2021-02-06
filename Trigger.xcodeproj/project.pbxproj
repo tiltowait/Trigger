@@ -22,6 +22,7 @@
 		2853BABF25CF0831004C69AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2853BAC125CF0831004C69AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2853BAC225CF0831004C69AA /* Trigger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trigger.entitlements; sourceTree = "<group>"; };
+		28A2BBA225CF19C700063322 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 		2853BAA925CF0830004C69AA = {
 			isa = PBXGroup;
 			children = (
+				28A2BBA225CF19C700063322 /* README.md */,
 				2853BAB425CF0830004C69AA /* Trigger */,
 				2853BAB325CF0830004C69AA /* Products */,
 			);
