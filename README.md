@@ -10,4 +10,4 @@ There is none! If you wish to change the behavior, you will need to modify this 
 let hotKey = HotKey(key: .grave, modifiers: [.control])
 ```
 
-You will also need to modify the `keyDownHandler` starting at line 34 of the app delegate.
+You will also need to modify the `keyDownHandler` starting at line 38 of the app delegate.

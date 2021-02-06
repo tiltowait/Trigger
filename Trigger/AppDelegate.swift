@@ -12,11 +12,13 @@ import HotKey
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-  var window: NSWindow!
   var statusBarItem: NSStatusItem!
+  
+  // Modify this line to specify a different hotkey chord
   let hotKey = HotKey(key: .grave, modifiers: [.control])
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
+    // Establish status bar icon and button
     self.statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
     
     let menu = NSMenu()
@@ -31,9 +33,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       button.image = NSImage(named: "Icon")
     }
     
+    // Modify this handler to change hotkey behavior
     hotKey.keyDownHandler = {
       let userDir = FileManager.default.homeDirectoryForCurrentUser
-      NSWorkspace.shared.open(userDir)
+      NSWorkspace.shared.open(userDir) // Need to have sandboxing turned OFF for this to work
     }
   }
 
@@ -41,6 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // Insert code here to tear down your application
   }
 
+  /// Quits the utility
   @objc func quit(_ sender: AnyObject?) {
     NSApp.terminate(self)
   }
